@@ -30,7 +30,7 @@
             <h3 class="menuItem">CRATER</h3>
             <h3 class="menuItem">HIPPIE</h3>
             
-         <  <h3 class="menuItem">BOTTLE</h3>
+           <h3 class="menuItem">BOTTLE</h3>
             
             <h3 class="menuItem">T-SHIRT</h3>  
         </div>
@@ -77,6 +77,26 @@
                 <img src="./img/hippie.png" alt="" class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">HIPPIE</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$99</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+
+            <div class="sliderItem">
+                <img src="nike3img.png" alt="T-Shirt" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">T-SHIRT<br> NEW<br> SEASON</h1>
+                <h2 class="sliderPrice">$99</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            
+            <div class="sliderItem">
+                <img src="nikebtlimg.png" alt="Bottle" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">BOTTLE<br> NEW<br> SEASON</h1>
                 <h2 class="sliderPrice">$99</h2>
                 <a href="#product">
                     <button class="buyButton">BUY NOW!</button>
@@ -270,6 +290,39 @@ gsap.from(".buyButton", {
   duration: 1,
   delay: 1.5,
   ease: "elastic.out(1, 0.5)",
+});
+
+
+
+
+
+
+
+
+
+
+gsap.from(".sliderTitle", {
+    opacity: 0,
+    y: -50,
+    duration: 1,
+    delay: 0.5,
+    ease: "power2.out",
+});
+
+gsap.from(".sliderPrice", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    delay: 1,
+    ease: "power2.out",
+});
+
+gsap.from(".buyButton", {
+    opacity: 0,
+    scale: 0.5,
+    duration: 1,
+    delay: 1.5,
+    ease: "elastic.out(1, 0.5)",
 });
     </script>
 </body>
